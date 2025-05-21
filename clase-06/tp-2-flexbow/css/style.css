@@ -1,0 +1,295 @@
+.body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.hamburger-menu {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+.navbar {
+    list-style: none;
+    position: fixed; /* para mantener el navbar fijo */
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar.active {
+    max-height: 500px;
+    padding: 1rem 0;
+}
+
+.navbar__item {
+    padding: 0.8rem 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar__link {
+    display: block;
+    font-weight: bold;
+}
+
+.navbar__link:hover {
+    color: #0066cc;
+}
+
+.navbar__logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #0066cc;
+}
+
+.navbar__date {
+    color: #666;
+}
+
+
+.main-content {
+    padding: 1.5rem;
+}
+
+.news-article {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.article-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.article-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-image {
+    margin: 1.5rem 0;
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.article-lead {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.article-paragraph {
+    margin-bottom: 1rem;
+}
+
+.article-subtitle {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1rem;
+    color: #222;
+}
+
+.sidebar {
+    display: none;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.sidebar-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.related-list {
+    list-style: none;
+    padding: 0;
+}
+
+.related-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.related-title {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.related-link {
+    color: #0066cc;
+}
+
+.related-date {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.newsletter-form {
+    margin-top: 1.5rem;
+}
+
+.newsletter-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.newsletter-button {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 1.5rem;
+}
+
+.footer-section {
+    margin-bottom: 1.5rem;
+}
+
+.footer-title {
+    color: #fff;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.footer-text {
+    margin-bottom: 0.5rem;
+}
+
+.footer-address {
+    font-style: normal;
+}
+
+.copyright {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+}
+
+.copyright-text {
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 600px) {
+    .hamburger-menu {
+        display: none;
+    }
+    
+    .menu-desktop {
+        display: block;
+    }
+    
+    .navbar {
+        position: static;
+        max-height: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: center;
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .navbar__item {
+        padding: 0;
+        border-bottom: none;
+    }
+    
+    .sidebar {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .main-content {
+        display: flex;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .news-article {
+        flex: 2;
+        margin-bottom: 0;
+    }
+    
+    .sidebar {
+        flex: 1;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+    .footer-section {
+        flex: 1;
+        padding: 0 1rem;
+    }
+}
