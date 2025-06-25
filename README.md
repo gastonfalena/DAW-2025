@@ -8,3 +8,5 @@ link de la noticia:https://www.rosario3.com/deportes/Chiqui-Tapia-rompio-el-sile
 [Clase-06](https://gastonfalena.github.io/DAW-2025/clase-06/tp-2-flexbox/index.html)
 
 [Clase-09](https://gastonfalena.github.io/DAW-2025/clase-09/form.html)
+
+[Clase-11](https://gastonfalena.github.io/DAW-2025/clase-11/index.html)
